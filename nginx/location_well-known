@@ -1,0 +1,6 @@
+# Nginx snippets
+# Location block for ACME / Letsencrypt
+# Include it in server blocks whereever required
+location /.well-known {
+  root /var/www/html;
+}

@@ -1,0 +1,6 @@
+# Nginx snippet
+# Include in server block
+location / {
+  default_type text/plain;
+  return 200 "IP-address: $remote_addr\nUser-agent: $http_user_agent\n";
+}

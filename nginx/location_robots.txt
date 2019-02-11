@@ -1,0 +1,7 @@
+# Nginx snippet
+# Include in server block
+# Location for robots.txt
+location /robots.txt {
+  default_type text/plain;
+  return 200 "User-Agent: *\nDisallow: /\n";
+}
